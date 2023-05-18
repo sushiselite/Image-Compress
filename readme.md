@@ -14,7 +14,7 @@ The Image Compressor is a Python-based application that allows you to compress i
 
 ## Usage
 
-1. Run the `image_compressor_gui.exe` executable.
+1. Run the `image_compressor.exe` executable.
 2. Click the "Import" button to select the input image file.
 3. Click the "Output" button to choose the output directory.
 4. Click the "Compress" button to start the image compression process.
