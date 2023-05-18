@@ -33,7 +33,7 @@ If you want to build the executable from the source code, follow these steps:
 
 1. Clone the repository or download the source code files.
 2. Install the required dependencies.
-3. 3. Run the PyInstaller command to generate the executable:
+3. Run the PyInstaller command to generate the executable:
 
 ```shell
 pyinstaller --onefile --distpath=build --icon=my_icon.ico image_compressor_gui.py
