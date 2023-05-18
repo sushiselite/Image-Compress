@@ -23,7 +23,15 @@ def compress_image():
     if input_path and output_directory:
         image = Image.open(input_path).convert("RGB")
         output_file = os.path.join(output_directory, "compressed_image.jpg")
+
+        progress_bar.config(value=0)
+        progress_bar.update()
+
         image.save(output_file, optimize=True, quality=80)
+
+        progress_bar.config(value=100)
+        progress_bar.update()
+
         status_label.config(text="Image compressed successfully.", fg="green")
     else:
         status_label.config(text="Input image or output directory not selected.", fg="red")
@@ -66,7 +74,7 @@ status_label.pack(pady=10)
 progress_label = tk.Label(root, text="Progress:", font=("Arial", 12), bg="#F8F8F8")
 progress_label.pack(pady=5)
 
-progress_bar = Progressbar(root, length=200, mode="indeterminate")
+progress_bar = Progressbar(root, length=200, mode="determinate")
 progress_bar.pack(pady=5)
 
 # Start the main event loop
