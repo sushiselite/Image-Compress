@@ -1,6 +1,6 @@
 # Image Compressor
 
-The Image Compressor is a Python-based application that allows you to compress images using lossy compression. It provides a graphical user interface (GUI) that enables users to select an input image file, choose an output directory, and compress the image with the specified settings.
+This Image Compressor is a Python-based application that allows you to compress images using lossy compression. It provides a graphical user interface (GUI) that enables users to select an input image file, choose an output directory, and compress the image with the specified settings.
 
 ## Features
 
